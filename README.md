@@ -1,2 +1,100 @@
-# premissh
+# Premissh
 A tool for automatically creating PREMIS from a file.
+
+## Contents
+
+1. [Introduction](##-Introduction)
+2. [Getting started](##-Getting-Started)
+	a. [Using BASH Terminal](###-Using-BASH-Terminal)
+	b. [Install Dependencies](###-Install-Dependencies)
+	c. [Download Repository](###-Download-Repository)
+	d. [Make Executable](###-Make-Executable)
+3. [Usage](#-Usage)
+4. [License](###-License)
+
+
+## Introduction
+
+This repository contains a simple bash script which can extract metadata from a digital file and outputs it as PREMIS XML. I created this as part of my MA Archives Records Management at UCL, for the INST0045 Digital Curation module. It is currently a working prototype.
+
+This repository is provided as-is without any warranty or support. The author is not responsible for any damage or loss caused by the use of this script 
+
+
+## How it Works
+The UK National Archives' file profiling tool (DROID) is used by the script to do most of the metadata extraction. This is also supplemented with further metadata provided by exiftool. DROID outputs metadata in a CSV format, which the BASH script converts to XML. An XSLT stylesheet applied to the XML, using Saxon, outputting the PREMIS XML document. DROID an Saxon are included within the repository, so you don't need to have these pre-installed.
+
+
+## Getting Started
+Premissh is a BASH script, so you have to use a compatible Unix-based shell program to run it. I used BASH to develop it, so I'd recommend using this.
+
+
+### Using BASH Terminal
+
+Ubuntu - You should be able to just use the pre-installed terminal application, as BASH comes installed as default.
+
+Mac - I haven't tested Premissh on Mac desktop. It currently isn't compatible with the default terminal shell application (Zsh). However, it should work with a recent version of BASH. The installation instructions below are for Ubuntu or WSL, and use the apt package manager. However, this is not compatible with Mac, so homebrew (https://brew.sh/) should be used instead for installing dependencies. You'll also need to use homebrew install GNU-Coreutils, since this is not pre-installed on Mac. 
+
+Windows - There are multiple ways to use BASH within windows. Linux operating systems can be run through virtual box. Alternatively, the Windows Substem for Linux (WSL) can be used, which provides an Ubuntu/BASH environment that can be accessed through powershell. Installation instructions for WSL can be found here: https://learn.microsoft.com/en-us/windows/wsl/install
+
+
+### Install Dependencies
+
+Install Java
+'sudo apt install default-jre'
+
+
+Install Exiftool
+'sudo apt install exiftool'
+
+
+### Download repository
+'git clone https://github.com/alexhabgood/premissh.git'
+
+
+### Make Executable
+
+To run the script, you need to give it executable permissions. This can be achieved with the following command, replacing "path/to/premissh.sh" with the actual filepath to the premissh.sh file. You can find this in the top level of the repository, downloaded in the previous step.
+
+sudo chmod +x "path/to/premissh.sh"
+
+
+## Usage 
+
+To run the bash script you can use the following command. Replace "path/to/premissh.sh" with the filepath to the bash script file within the downloaded repository. Replace "path/to/target-folder" with the folderpath that contains the files you want to create Premis XML for. The Premis XML file will be outputted adjacent to the folder being processed. If your system complies with the bagit specification, you can give the folderpath to the bag's "data" folder. A single Premis document will be created, which will object entity for every file encountered within the folder.
+
+'bash "path/to/premissh.sh"  "path/to/target-folder"'
+
+
+## Licenses
+
+This repository is available under the BSD 3-Clause License, except for the third-party components. Further information about this license can be found in the `LICENSE` file at the top level of this repository. The license information for third-party components is detailed below.
+
+
+### Notice Regarding DROID Usage
+
+This repository includes DROID (Digital Record Object Identification) for file profiling. DROID is developed and provided by The National Archives (UK). DROID is distributed under the BSD 3-Clause License. Further information about the license, including a copyright and disclaimenr notice, can be found in the `LICENSE` file in the droid subfolder of this repository. By using this repository and the included copy of DROID, you agree to comply with the terms and conditions outlined in the BSD 3-Clause License.
+
+For more information about DROID, please visit the The National Archives website: 
+https://www.nationalarchives.gov.uk/information-management/manage-information/policy-process/digital-continuity/file-profiling-tool-droid/
+
+Information about the licensing terms for DROID, can be found here:
+https://github.com/digital-preservation/droid/blob/master/LICENSE
+
+The source code for DROID can be found here: 
+https://github.com/digital-preservation/droid
+
+
+
+### Notice Regarding Saxon-HE Usage
+
+This repository includes Saxon-HE (Home Edition) for XML processing. Saxon-HE is developed and provided by Saxonica Limited. Saxon-HE is distributed under the Mozilla Public License Version 2.0 (MPL 2.0), a copy of which can be found in the `LICENSE` file in the saxon/notices subfolder of this repository. By using this repository and the included Saxon-HE library, you agree to comply with the terms and conditions outlined in the MPL 2.0.
+
+For more information about Saxon-HE, please visit the official Saxonica website: 
+https://www.saxonica.com/documentation12/documentation.xml
+
+Information about and the licensing terms for Saxon-HE can be found here:
+https://www.saxonica.com/documentation9.6/index.html#!conditions
+
+The source code for Saxon-HE can be found here: 
+https://github.com/Saxonica/Saxon-HE
+
