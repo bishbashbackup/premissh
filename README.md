@@ -5,10 +5,10 @@ A tool for automatically creating PREMIS from a file.
 
 1. [Introduction](##-Introduction)
 2. [Getting started](##-Getting-Started)
-	a. [Using BASH Terminal](###-Using-BASH-Terminal)
-	b. [Install Dependencies](###-Install-Dependencies)
-	c. [Download Repository](###-Download-Repository)
-	d. [Make Executable](###-Make-Executable)
+a. [Using BASH Terminal](###-Using-BASH-Terminal)
+b. [Install Dependencies](###-Install-Dependencies)
+c. [Download Repository](###-Download-Repository)
+d. [Make Executable](###-Make-Executable)
 3. [Usage](#-Usage)
 4. [License](###-License)
 
@@ -40,22 +40,22 @@ Windows - There are multiple ways to use BASH within windows. Linux operating sy
 ### Install Dependencies
 
 Install Java
-'sudo apt install default-jre'
+`sudo apt install default-jre`
 
 
 Install Exiftool
-'sudo apt install exiftool'
+`sudo apt install exiftool`
 
 
 ### Download repository
-'git clone https://github.com/alexhabgood/premissh.git'
+`git clone https://github.com/alexhabgood/premissh.git`
 
 
 ### Make Executable
 
 To run the script, you need to give it executable permissions. This can be achieved with the following command, replacing "path/to/premissh.sh" with the actual filepath to the premissh.sh file. You can find this in the top level of the repository, downloaded in the previous step.
 
-sudo chmod +x "path/to/premissh.sh"
+`sudo chmod +x "path/to/premissh.sh"`
 
 
 ## Usage 
