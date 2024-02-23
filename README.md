@@ -17,7 +17,7 @@ This documentation was last updated in 23rd February 2024.
 
 ## Introduction
 
-This repository contains a simple bash script which can extract metadata from a digital file and outputs it as PREMIS XML. I created this as part of my MA Archives Records Management at UCL, for the INST0045 Digital Curation module. It is currently a working prototype.
+This repository contains a simple BASH script which can extract metadata from a digital file and outputs it as PREMIS XML. I created this as part of my MA Archives Records Management at UCL, for the INST0045 Digital Curation module. It is currently a working prototype.
 
 This repository is provided as-is without any warranty or support. The author is not responsible for any damage or loss caused by the use of this script 
 
