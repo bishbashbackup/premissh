@@ -1,14 +1,14 @@
 # Premissh
-A tool for automatically creating PREMIS from a file.
+A tool for automatically creating PREMIS XML from a file.
 
 ## Contents
 
 1. [Introduction](##-Introduction)
 2. [Getting started](##-Getting-Started)
-a. [Using BASH Terminal](###-Using-BASH-Terminal)
-b. [Install Dependencies](###-Install-Dependencies)
-c. [Download Repository](###-Download-Repository)
-d. [Make Executable](###-Make-Executable)
+i. [Using BASH Terminal](###-Using-BASH-Terminal)
+ii. [Install Dependencies](###-Install-Dependencies)
+iii. [Download Repository](###-Download-Repository)
+iv. [Make Executable](###-Make-Executable)
 3. [Usage](#-Usage)
 4. [License](###-License)
 
@@ -62,7 +62,7 @@ To run the script, you need to give it executable permissions. This can be achie
 
 To run the bash script you can use the following command. Replace "path/to/premissh.sh" with the filepath to the bash script file within the downloaded repository. Replace "path/to/target-folder" with the folderpath that contains the files you want to create Premis XML for. The Premis XML file will be outputted adjacent to the folder being processed. If your system complies with the bagit specification, you can give the folderpath to the bag's "data" folder. A single Premis document will be created, which will object entity for every file encountered within the folder.
 
-'bash "path/to/premissh.sh"  "path/to/target-folder"'
+`bash "path/to/premissh.sh"  "path/to/target-folder"`
 
 
 ## Licenses
