@@ -4,13 +4,13 @@ A tool for automatically creating PREMIS XML from a file.
 ## Contents
 
 1. [Introduction](##-Introduction)
-2. [Getting started](##-Getting-Started)
-i. [Using BASH Terminal](###-Using-BASH-Terminal)
-ii. [Install Dependencies](###-Install-Dependencies)
-iii. [Download Repository](###-Download-Repository)
-iv. [Make Executable](###-Make-Executable)
-3. [Usage](#-Usage)
-4. [License](###-License)
+1. [Getting started](##-Getting-Started)
+  1. [Using BASH Terminal](###-Using-BASH-Terminal)
+  1. [Install Dependencies](###-Install-Dependencies)
+  1. [Download Repository](###-Download-Repository)
+  1. [Make Executable](###-Make-Executable)
+1. [Usage](#-Usage)
+1. [License](###-License)
 
 
 ## Introduction
