@@ -1,5 +1,5 @@
 # Premissh
-A tool for automatically creating PREMIS XML from a file. 
+A prototype tool for automatically creating PREMIS XML from a file. 
 
 This documentation was last updated in 23rd February 2024.
 
