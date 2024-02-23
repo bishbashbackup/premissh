@@ -5,14 +5,14 @@ This documentation was last updated in 23rd February 2024.
 
 ## Contents
 
-1. [Introduction](##-Introduction)
-1. [Getting started](##-Getting-Started)
-   1. [Using BASH Terminal](###-Using-BASH-Terminal)
-   1. [Install Dependencies](###-Install-Dependencies)
-   1. [Download Repository](###-Download-Repository)
-   1. [Make Executable](###-Make-Executable)
-1. [Usage](#-Usage)
-1. [License](###-License)
+1. [Introduction](#Introduction)
+1. [Getting started](#Getting-Started)
+   1. [Using BASH Terminal](#Using-BASH-Terminal)
+   1. [Install Dependencies](#Install-Dependencies)
+   1. [Download Repository](#Download-Repository)
+   1. [Make Executable](#Make-Executable)
+1. [Usage](#Usage)
+1. [License](#License)
 
 
 ## Introduction
