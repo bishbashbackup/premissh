@@ -50,7 +50,7 @@ Install Exiftool
 
 
 ### Download repository
-`git clone https://github.com/alexhabgood/premissh.git`
+`git clone https://github.com/bishbashbackup/premissh.git`
 
 
 ### Make Executable
