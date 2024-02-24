@@ -1,7 +1,7 @@
 # Premissh
-A prototype tool for automatically creating PREMIS XML from a file. 
+A prototype tool for automatically creating PREMIS XML from a file, using DROID, BASH and XSLT. 
 
-This documentation was last updated in 23rd February 2024.
+This documentation was last updated in 24th February 2024.
 
 ## Contents
 
