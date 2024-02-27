@@ -48,16 +48,13 @@ Install Java
 Install Exiftool
 `sudo apt install exiftool`
 
-Download and Extract DROID
+#### Download and Extract DROID
 https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/
 
-Download and Extract Saxon Home Edition
+#### Download and Extract Saxon Home Edition
 https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/
 
-
-
-Update config.txt
-
+#### Update config.txt
 DROID and Saxon are standalone executable programs that do no require installation. You should move them to a permanent location on the filesystem. You'll then need to update the 'config.txt'. This contains variables, which let the bash script know where DROID and Saxon are located. Replace the filepaths in the file, with the absolute paths to the droid-command-line.jar file and the saxon-he.jar file. Further instructions are provided in the config.txt file.
 
 
