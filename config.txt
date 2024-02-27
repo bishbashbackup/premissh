@@ -3,7 +3,7 @@
 # Edit the variables below so the script can find DROID and Saxon on your system.
 
 DROID="path/to/droid-command-line.jar"
-SAXON="path/to/saxon-he.jar
+SAXON="path/to/saxon-he.jar"
 
 
 # For the DROID variable, you need to replace the string between the quotes with the absolute filepath to the saved location of the droid-command-line.jar folder on your computer. This can be found in the top level of the latest DROID release that can be downloaded from the TNA website: https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/.
