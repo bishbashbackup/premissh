@@ -75,6 +75,8 @@ To run the bash script you can use the following command. Replace "path/to/premi
 
 `bash "path/to/premissh.sh"  "path/to/target-folder"`
 
+If you are using WSL, then you need to give the absolute filepath from the Ubuntu root folder. If the target folder is located on the windows filesystem, you can navigate to it via the ubuntu /mnt folder, as shown in the example filepaths above. 
+
 
 ## Licenses
 
