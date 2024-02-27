@@ -41,11 +41,11 @@ Windows - There are multiple ways to use BASH within windows. Linux operating sy
 
 ### Install Dependencies
 
-Install Java
+#### Install Java
 `sudo apt install default-jre`
 
 
-Install Exiftool
+#### Install Exiftool
 `sudo apt install exiftool`
 
 #### Download and Extract DROID
