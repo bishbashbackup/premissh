@@ -1,5 +1,5 @@
 # Premissh
-A prototype tool for automatically creating PREMIS XML from a file, using DROID, BASH and XSLT. 
+A simple prototype tool for automatically creating PREMIS XML from a file, using DROID, BASH and XSLT. 
 
 This script is very much a work in progress and I'm developing it to progress my own programming skills/knowledge. It currently has minimum functionality and doesn't actively check the input it's given. So, there a high risk for issues. I appreciate any feedback given, please flag any comments in the issues tracker.
 
