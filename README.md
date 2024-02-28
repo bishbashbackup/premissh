@@ -1,6 +1,11 @@
 # Premissh
 A prototype tool for automatically creating PREMIS XML from a file, using DROID, BASH and XSLT. 
 
+This script is very much a work in progress and I'm developing it to progress my own programming skills/knowledge. It currently has minimum functionality and doesn't actively check the input it's given. So, there a high risk for issues. I appreciate any feedback given, please flags in the issues tracker.
+
+This repository is provided as-is without any warranty or support. The author is not responsible for any damage or loss caused by the use of this script 
+
+
 This documentation was last updated in 27th February 2024.
 
 ## Contents
@@ -18,8 +23,6 @@ This documentation was last updated in 27th February 2024.
 ## Introduction
 
 This repository contains a simple BASH script which can extract metadata from a digital file and outputs it as PREMIS XML. I created this as part of my MA Archives Records Management at UCL, for the INST0045 Digital Curation module. It is currently a working prototype.
-
-This repository is provided as-is without any warranty or support. The author is not responsible for any damage or loss caused by the use of this script 
 
 
 ## How it Works
