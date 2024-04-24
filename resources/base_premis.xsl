@@ -11,9 +11,9 @@
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		xsi:schemaLocation="http://www.loc.gov/premis/v3 https://www.loc.gov/standards/premis/premis.xsd" 
 		version="3.0">
+		<xsl:apply-templates select="DATA/OBJECT" />
 		<xsl:apply-templates select="DATA/EVENT" />
 		<xsl:apply-templates select="DATA/DROIDINFO" />
-		<xsl:apply-templates select="DATA/OBJECT" />
 	</premis:premis>
 </xsl:template>
 
