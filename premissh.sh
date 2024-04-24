@@ -11,12 +11,19 @@ tempdir="$(mktemp -d "${bag}"/temp-XXXXX)"
 droidcsv="$(mktemp -p "${tempdir}" droid_XXXXX.csv)"
 droidxml="$(mktemp -p "${tempdir}" droid_XXXXX.xml)"
 premisxml="$(mktemp -p "${tempdir}" premis_XXXXX.xml)"
+executiondate="$(date -Ins)"
+eventidentifier="$(uuidgen)"
+droidversion="$(java -jar "$DROID" -v)"
+droidsignaturefiles="$(java -jar "$DROID" -x)"
 
 java -jar "$DROID" "$data" -R -o "$droidcsv" -Pf "$droidproperties"
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' >> "$droidxml"
 echo "<DATA>" >> "$droidxml"
 
+echo -e "<EVENT>\n\t<DATE>$executiondate</DATE>\n\t<ID>$eventidentifier</ID>\n</EVENT>" >> "$droidxml"
+echo -e "<DROIDINFO>\n\t<VERSION>$droidversion</VERSION>" >> "$droidxml"
+echo -e "\t<SIGNATURES>$droidsignaturefiles</SIGNATURES>\n</DROIDINFO>" >> "$droidxml"
 IFS=',' read -r -a fields < "$droidcsv"
 
 tail -n +2 "$droidcsv" | while IFS=',' read -r line; do
