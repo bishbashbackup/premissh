@@ -1,7 +1,9 @@
 # Premissh
 A simple prototype tool for automatically creating PREMIS XML from a file, using DROID, BASH and XSLT. 
 
-This script is very much a work in progress and I'm developing it to progress my own programming skills/knowledge. It currently has minimum functionality and doesn't actively check the input it's given. So, there is currently a high risk for issues. I appreciate any feedback given, please flag any comments in the issues tracker.
+For an introduction to digital preservation metadata, and background on what led me to create Premissh, check out the blog series I wrote about it: https://www.bishbashbackup.co.uk/category/building-premissh/
+
+This script is very much a work in progress and I'm developing it to progress my own programming skills/knowledge. It currently has minimum functionality and doesn't actively check the input it's given. So, there is a risk for issues. I appreciate any feedback given, please flag any comments in the issues tracker.
 
 This repository is provided as-is without any warranty or support. The author is not responsible for any damage or loss caused by the use of this script 
 
