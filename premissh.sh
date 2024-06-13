@@ -33,10 +33,9 @@ tail -n +2 "$droidcsv" | while IFS=',' read -r line; do
 	name_field=$(echo "$line" | cut -d ',' -f 5 | sed 's/^"\(.*\)"$/\1/')
 	relative_path=$(realpath --relative-to="$bag" "$path_field")
 		
-	if [ "$type_field" != '"Folder"' ]; then
-	
-		creating_app=$(exiftool -Software -s3 "${1}/${name_field}")
-		creation_date=$(exiftool -CreateDate -s3 "${1}/${name_field}")
+	if [ "$type_field" != '"Folder"' ]; then	
+		creating_app=$(exiftool -Software -s3 "${path_field}")
+		creation_date=$(exiftool -CreateDate -s3 "${path_field}")
 				
 		xml_content=$'\t<OBJECT>'
 		xml_content+=$'\n\t\t<BASE>'

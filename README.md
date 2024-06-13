@@ -77,7 +77,7 @@ To run the script, you need to give it executable permissions. This can be achie
 
 ## Usage 
 
-To run the bash script you can use the following command. Replace "path/to/premissh.sh" with the filepath to the bash script file within the downloaded repository. Replace "path/to/target-folder" with the folderpath that contains the files you want to create Premis XML for. The Premis XML file will be outputted adjacent to the folder being processed. If your system complies with the bagit specification, you can give the folderpath to the bag's "data" folder. A single Premis document will be created, which will object entity for every file encountered within the folder.
+To run the bash script you can use the following command. Replace "path/to/premissh.sh" with the filepath to the bash script file within the downloaded repository. Replace "path/to/target" with the path to the file, or folder containing the files, that you want to create Premis XML for. The Premis XML file will be outputted adjacent to the folder or file being processed. If your system complies with the bagit specification, you can give the folderpath to the bag's "data" folder. A single Premis document will be created, which will object entity for every file encountered within the folder.
 
 `bash "path/to/premissh.sh"  "path/to/target-folder"`
 
