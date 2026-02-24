@@ -28,7 +28,7 @@ This repository contains a simple BASH script which can extract metadata from a 
 
 
 ## How it Works
-The UK National Archives' file profiling tool (DROID) is used by the script to do most of the metadata extraction. This is also supplemented with further metadata provided by exiftool. DROID outputs metadata in a CSV format, which the BASH script converts to XML. An XSLT stylesheet applied to the XML, using Saxon, outputting the PREMIS XML document. DROID an Saxon are included within the repository, so you don't need to have these pre-installed.
+The UK National Archives' file profiling tool (DROID) is used by the script to do most of the metadata extraction. This is also supplemented with further metadata provided by exiftool. DROID outputs metadata in a CSV format, which the BASH script converts to XML. An XSLT stylesheet applied to the XML, using Saxon, outputting the PREMIS XML document.
 
 
 ## Getting Started
@@ -87,4 +87,5 @@ If you are using WSL, then you need to give the absolute filepath from the Ubunt
 ## Licenses
 
 This repository is available under the BSD 3-Clause License. Further information about this license can be found in the `LICENSE` file at the top level of this repository.
+
 
